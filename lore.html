@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Vanguard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<!-- NAVBAR==================================================================================================================================================================================== -->
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Project Vanguard</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="devlog.html">Devlog</a></li>
+        <li><a href="lore.html">Lore</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BACKGROUND==================================================================================================================================================================================== -->
+
+  <div class="bg"></div>
+
+  <style>
+    .banner {
+      height: 25vh;
+    }
+  </style>
+
+  <!-- INTRODCUTION==================================================================================================================================================================================== -->
+
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title movement">Lore</div>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+      </div>
+  </div>
+  </div>
+
+<!-- FOOTER==================================================================================================================================================================================== -->
+
+    <button class="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+      var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+      var rootElement = document.documentElement
+
+      function handleScroll() {
+        // Do something on scroll
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+        if ((rootElement.scrollTop / scrollTotal ) > 0.40) {
+          // Show button
+          scrollToTopBtn.classList.add("showBtn")
+        } else {
+          // Hide button
+          scrollToTopBtn.classList.remove("showBtn")
+        }
+      }
+
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        })
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop)
+      document.addEventListener("scroll", handleScroll)
+    </script>
+
+
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Project Vanuguard</h4>
+          <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">Devlog</a></li>
+            <li><a href="#">Lore</a></li>
+            <li><a href="#">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Installation</a></li>
+            <li><a href="#">Server Status</a></li>
+            <li><a href="#">Trouble Shooting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>WallKick Interactive™</h4>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">The Team</a></li>
+            <li><a href="#">Website</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.reddit.com/r/Project_Vanguard/"><i class="fab fa-reddit"></i></a>
+            <a href="https://twitter.com/PRJ_Vanguard"><i class="fab fa-twitter"></i></a>
+            <a href="https://discord.com/invite/dGkUNWGTzv"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com/VanguardDev/Vanguard"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+
+  <!-- SCRIPT-FOR-FOOTER==================================================================================================================================================================================== -->
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
