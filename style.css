@@ -6,11 +6,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.body {
-  opacity: 0;
-  transition: opacity 5s;
-}
-
 
 /*SCROLLBAR==========================================================*/
 
@@ -243,6 +238,15 @@
   margin-right: auto;
   padding-top: 50px;
   width: 90%;
+}
+
+ul.b {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul.b li {
+  margin-top: 5px;
 }
 
 /*FOOTER==============================================================*/

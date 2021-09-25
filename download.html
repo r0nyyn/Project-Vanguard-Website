@@ -22,7 +22,7 @@
         </div>
         <li><a href="index.html">Home</a></li>
         <li><a href="devlog.html">Devlog</a></li>
-        <li><a href="lore.html">Gameplay</a></li>
+        <li><a href="lore.html">Lore & Gameplay</a></li>
         <li><a href="download.html">Download</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -48,13 +48,26 @@
   <div class="about">
     <div class="content">
       <div class="title movement">Download</div>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-      </div>
+        
+        <div class="subheading movement-subheading">Overview</div>
+        <p>As of now, because Project Vanguard is still under developement, there will be no option to download the game. However, the progess we have made in developement is up on GitHub for you all to see. Below will be some instructions on how to run it through the Unity Game Engine.</p>
+        
+        <div class="subheading movement-subheading">Steps</div>
+        <p>
+          <ul class="b">
+            <li>Download or clone the repo</li>
+            <li>Open the root of the repo in the Unity Hub. The project will give you an error while opening, citing compilation errors</li>
+            <li>Open the project in safe mode, then add the Mirror Unity Asset Package. The asset package is free, but they have not published a UPM package so it still must be installed manually (DevOps contributions for automation welcome!)</li>
+            <li>Once the import for Mirror has finished, you can exit safe mode and open the project</li>
+            <li>Click ParrelSync->Clones Manager in the toolbar at the top of the window</li>
+            <li>Click "Add new clone". This will create an exact clone of the project on your machine, and will keep it in sync as you make changes to the main project. This allows you to test multiplayer in the editor without having to "Build & Run" after every change. You will only make changes in the main project, not the clones. If you try to save a change in a clone you will get an error message.</li>
+            <li>Once the cloning process is done, click "Open in New Editor" to open the clone</li>
+            <li>Press play to connect to the dedicated server or press host to host a server of your own</li>
+            <li>If you host a server you can connect to it in the other editor by writing "localhost" to the ip address part and pressing play</li>
+            <li>Done! :D</li>
+          </ul>
+        </p>
+        </div>
   </div>
   </div>
 
@@ -111,7 +124,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>WallKick Interactive™</h4>
+          <h4>WallKick Games™</h4>
           <ul>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Games</a></li>
