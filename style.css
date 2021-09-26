@@ -55,6 +55,12 @@
   font-weight: 600;
   text-decoration: none;
 }
+
+/*.navbar .logo a @font-face { 
+  font-family: 'Future Z'; src: url('FUTUREZ.TTF'); 
+  font-family: 'Furute Z';
+}
+*/
 .navbar .menu-list{
   display: inline-flex;
 }
