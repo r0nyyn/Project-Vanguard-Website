@@ -256,6 +256,23 @@ ul.b li {
   margin-top: 5px;
 }
 
+.ListStyle {
+  margin-top: 20px;
+}
+
+.ListStyle ul li {
+  float: left;
+  list-style-type: none;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.ListStyle ul li ul li {
+  list-style-type: disc;
+  float: none;
+  margin-left: 20px;
+}
+
 /*FOOTER==============================================================*/
 
 *{
