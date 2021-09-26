@@ -14,7 +14,7 @@
   <nav class="navbar">
     <div class="content">
       <div class="logo">
-        <a href="#">Project Vanguard</a>
+        <a href="index.html">Project Vanguard</a>
       </div>
       <ul class="menu-list">
         <div class="icon cancel-btn">
@@ -49,12 +49,7 @@
       <div class="subheading movement-subheading">The Community</div>
       <p>Our Community is full of hard-working, imaginative individuals who help contribute to this project. As of now, both our discord server and twitter have amassed a following of 2000+ individuals combined, and still growing. As we continue to develop this game into the dream that all of us at WallKick Games™ envisoned, we hope to inspire more talented people on our journey.</p>
       
-<!--       <div class="subheading movement-subheading">Development</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius, hic aperiam odio! Quasi molestias magnam illo voluptatem iusto ipsam blanditiis, tempore cumque reiciendis quaerat vero tenetur, sequi dolores libero voluptas vitae voluptate placeat dolorum modi ipsa nisi repellat facilis aliquam asperiores. Aut nam repellat harum quas saepe dolorum voluptates ratione, itaque consectetur explicabo a facilis rem mollitia maxime repudiandae fuga reprehenderit, odio cum incidunt labore molestiae quis non perferendis ipsam. Illum, in, deserunt. Ipsa.</p> -->
-
-      <!-- MEET THE TEAM==================================================================================================================================================================================== -->
-
-      <!-- <div class="container-skills"><div class="skills owners">3.6%</div></div> -->
+  <!-- TEAM==================================================================================================================================================================================== -->
 
       <div style="padding-top:80px;" class="title movement">Meet the team at WallKick Games™</div> 
 
@@ -131,34 +126,6 @@
 
     <button class="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
 
-    <script>
-      var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
-      var rootElement = document.documentElement
-
-      function handleScroll() {
-        // Do something on scroll
-        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-        if ((rootElement.scrollTop / scrollTotal ) > 0.40) {
-          // Show button
-          scrollToTopBtn.classList.add("showBtn")
-        } else {
-          // Hide button
-          scrollToTopBtn.classList.remove("showBtn")
-        }
-      }
-
-      function scrollToTop() {
-        // Scroll to top logic
-        rootElement.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        })
-      }
-      scrollToTopBtn.addEventListener("click", scrollToTop)
-      document.addEventListener("scroll", handleScroll)
-    </script>
-
-
     <footer class="footer">
      <div class="container">
       <div class="row">
@@ -202,26 +169,6 @@
      </div>
   </footer>
 
-  <!-- SCRIPT-FOR-FOOTER==================================================================================================================================================================================== -->
-
-  <script>
-    const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }
-  </script>
+  <script src="js/animations.js"></script>
 </body>
 </html>
